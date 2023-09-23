@@ -1,5 +1,4 @@
 from django.db import models
-from users.models import User
 
 
 
@@ -9,9 +8,9 @@ class Ticket(models.Model):
     added_at = models.DateTimeField(auto_now_add=True)
     code = models.CharField(max_length=127)
     
-    user = models.ForeignKey(
-        "users.User", on_delete=models.CASCADE, related_name="ticket"
-    )
+    # user = models.ForeignKey(
+    #     "users.User", on_delete=models.CASCADE, related_name="ticket"
+    # )
 
 
 # class TicketsOrder(models.Model):
