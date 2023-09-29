@@ -71,6 +71,8 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 ROOT_URLCONF = "_tickets.urls"
 
 CORS_ALLOWED_ORIGINS: ["https://frontendticket.vercel.app/"]
